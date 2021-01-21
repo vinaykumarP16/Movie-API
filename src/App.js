@@ -15,7 +15,7 @@ const[movies, SetMovies]=useState([]);
 const[favourites, Setfav]=useState([]);
 const[searchValue,setSearchValue]=useState('');
 const getMovRequest= async ()=>{
-  const url=`http://www.omdbapi.com/?s=${searchValue}&apikey=34fb6f45`;
+  const url=`https://www.omdbapi.com/?s=${searchValue}&apikey=34fb6f45`;
   const response= await fetch(url);
   const responseJson=await response.json();
   if (responseJson.Search) {
